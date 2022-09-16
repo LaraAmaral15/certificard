@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  background: linear-gradient(236.85deg, 		#8A2BE2 27.26%, #483D8B 96.03%);
+  font-family: 'Roboto', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  background: #ECF4FF;
+  box-shadow: 6px 6px 6px #0E1D2F;
+  border-radius: 20px;
+  
+  padding: 64px;
+  margin: 25px;
+  
+  color: #1C1C1C;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+}
+
+.perfil-foto {
+  border-radius: 460px;
+  max-height: 160px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.titulo {
+  margin-left: 20px;
+}
+
+.titulo h1 {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.titulo h3 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.tema button {
+  align-self: flex-end;
+  font-size: 24px;
+  font-weight: 400;
+  padding: 8px 16px;
+  background: #ECF4FF;
+  border: 2px solid #0E1D2F;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.conteudo-principal {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  justify-content: space-between;
+  grid-column-gap: 20px;
+}
+
+.container-main {
+  display: flex;
+  flex-direction: column;
+  
+  background: linear-gradient(230.65deg, #836FFF 27.49%, 	#9370DB 83.19%);
+  box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
+  border-radius: 20px;
+  
+  padding: 32px 32px 32px 10px;
+  margin-top: 32px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 48px;
+  list-style-type: none;
+
+  color: #1C1C1C;
+}
+
+.titulo {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+#projeto-titulo {
+  margin-left: 40px;
+}
+
+/* Conquistas */
+
+.container-main img {
+  width: 118px;
+  height: 118px;
+}
+
+#conquistas {
+  height: 46%;
+}
+
+#titulo-conquista {
+  text-align: center;
+}
+
+#conquistas ul {
+  display: block;
+  padding-right: 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+/* Dark mode */
+
+.dark {
+  background: linear-gradient(236.85deg, 	#4B0082 27.26%, #483D8B 96.03%);
+
+}
+
+.dark .container {
+  background: #333439;
+  color: #F6F6F6;
+}
+
+.dark .container-main {
+  color:  #1C1C1C;
+  background: linear-gradient(230.65deg, #9370DB 27.49%, 	#7B68EE 83.19%);
+}
+
+.dark .tema button {
+  background: #1C1C1C;
+  color: #FFF;
+  border: 2px solid #F7F7F7;
+}
+
+.dark .icons a svg path{
+  fill: #FFF;
+}
+
+@media (max-width: 940px)  {
+  #titulo-conquista {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 810px)  {
+  #titulo-conquista {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 770px)  {
+  .cabecalho {
+  display: flex;
+    flex-direction: column-reverse;
+  justify-content: space-between;
+  }
+  .conteudo-principal {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  
+  #conquistas {
+    height: 95%;
+  }
+
+  
+  #titulo-conquista {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 630px) {
+  .cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .perfil {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
